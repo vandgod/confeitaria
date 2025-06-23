@@ -1,0 +1,117 @@
+/* estilo.css - Estilo principal */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s ease;
+}
+
+/* Tema Confeitaria */
+.tema-confeitaria {
+  background: linear-gradient(135deg, rgba(255, 192, 203, 0.8) 0%, rgba(255, 218, 185, 0.8) 100%);
+  color: #8B4513;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.boas-vindas-container {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.logo {
+  margin-bottom: 25px;
+}
+
+.logo img {
+  max-width: 200px;
+  height: auto;
+  filter: drop-shadow(0 5px 15px rgba(139, 69, 19, 0.3));
+}
+
+.logo h1 {
+  margin-top: 15px;
+  font-size: 2.2rem;
+  color: #D2691E;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.mensagem-boas-vindas {
+  background-color: rgba(255, 250, 240, 0.7);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 20px 0;
+  border: 1px dashed rgba(210, 105, 30, 0.4);
+}
+
+.mensagem-boas-vindas p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #A0522D;
+}
+
+.acao-central {
+  margin-top: 30px;
+}
+
+.btn-doce {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(to right, #FF69B4, #FF8C00);
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-doce:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 105, 180, 0.6);
+  background: linear-gradient(to right, #FF8C00, #FF69B4);
+}
+
+/* Efeitos de animação */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.logo img {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .logo h1 {
+    font-size: 1.8rem;
+  }
+  
+  .mensagem-boas-vindas p {
+    font-size: 1rem;
+  }
+  
+  .btn-doce {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
