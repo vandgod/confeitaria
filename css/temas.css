@@ -1,0 +1,100 @@
+/* Tema Confeitaria */
+.tema-confeitaria {
+    background-image: url('../img/fundo-confeitaria.png');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.titulo-rosa {
+    color: #d14d72;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.login-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-login {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.mensagem {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.mensagem.erro {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.mensagem.sucesso {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.convite {
+    text-align: center;
+    margin-top: 20px;
+    color: #7a6a65;
+}
+
+.convite a {
+    color: #d14d72;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.convite a:hover {
+    text-decoration: underline;
+}
+
+/* Filtros */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.filtros .btn-doce {
+    background-color: #ffb5da;
+    color: #5a3e36;
+}
+
+.filtros .filtro-ativo {
+    background-color: #d14d72;
+    color: white;
+}
+
+/* Opções de Entrega */
+.opcoes-entrega {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.opcoes-entrega label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.opcoes-entrega input[type="radio"] {
+    accent-color: #d14d72;
+}
